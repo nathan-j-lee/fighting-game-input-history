@@ -8,4 +8,5 @@ window.addEventListener("gamepadconnected", (e) => {
     );
 });
 
-console.log("Testing");
+const gp = navigator.getGamepads()[0];
+console.table(gp.buttons);

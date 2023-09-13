@@ -28,7 +28,24 @@ function gamepadInput() {
   mk = buttons[1].pressed;
   lp = buttons[2].pressed;
   mp = buttons[3].pressed;
-  if (lk || lp || mp || mk) console.log(buttons);
+  hp = buttons[5].pressed;
+  hk = buttons[7].pressed;
+
+  left = buttons[14].pressed;
+  right = buttons[15].pressed;
+  up = buttons[12].pressed;
+  down = buttons[13].pressed;
+
+  if (lp) console.log("LP");
+  if (mp) console.log("MP");
+  if (hp) console.log("HP");
+  if (lk) console.log("LK");
+  if (mk) console.log("MK");
+  if (hk) console.log("HK");
+  if (left) console.log("<");
+  if (right) console.log(">");
+  if (up) console.log("^");
+  if (down) console.log("v");
 }
 
 function gameLoop() {
